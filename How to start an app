@@ -1,0 +1,12 @@
+How to start an app
+In the correct folder, TYPE "rails new Filename" (this will create a new rails directory)
+cd into the new rails directory
+rails g controller Pages home (g == generate)
+
+OR
+
+TYPE "rails g scaffold Filename title:string notes:text due:date done:boolean" (ALWAYS make the filename SINGULAR because rails will make it plural later)
+
+rails server (starts your server)
+
+In browser, go to http://localhost:3000/pages/home
