@@ -15,10 +15,12 @@ class TodosController < ApplicationController
   # GET /todos/new
   def new
     @todo = Todo.new
+    @users = User.all
   end
 
   # GET /todos/1/edit
   def edit
+    @users = User.all
   end
 
   # POST /todos
@@ -69,6 +71,6 @@ class TodosController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def todo_params
-      params.require(:todo).permit(:title, :notes, :due, :done)
+      params.require(:todo).permit(:title, :notes, :due, :done, :user_id)
     end
 end
