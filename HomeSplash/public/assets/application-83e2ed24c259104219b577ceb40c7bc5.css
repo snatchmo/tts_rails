@@ -1,3 +1,16 @@
+/* line 5, c:/Users/Jolanda/desktop/tts/rails/HomeSplash/app/assets/stylesheets/home.scss */
+#main {
+  text-align: center;
+  top: 30%;
+  width: 100%;
+  position: absolute;
+  line-height: 1em;
+}
+/* line 12, c:/Users/Jolanda/desktop/tts/rails/HomeSplash/app/assets/stylesheets/home.scss */
+#main h1 {
+  font-family: impact;
+  font-size: 4em;
+}
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
@@ -10,24 +23,14 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
- *= require_tree .
- *= require_self
+
+
  */
+
 
 html {
   font-family: Arial;
-  font-size: 20px;
-  background-color: #FFF;
-}
-
-#footer {
- position: absolute;
- bottom: 0;
- width: 100%;
- height: 2em;
- background-color: rgba(0,0,0,0.5);
- text-align: center;
- padding-top: 1em;
- color: white;
- left: 0;
+  font-size: 20 px;
+  background-color: #000;
+  color: #ffc700;
 }
