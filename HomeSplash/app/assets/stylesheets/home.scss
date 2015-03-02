@@ -3,15 +3,23 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 #main {
+  font-family: 'Permanent Marker', cursive;
   text-align: center;
   top: 30%;
   width: 100%;
   position: absolute;
   line-height: 1em;
-}
+
   h1 {
-    font-family: impact;
     font-size: 4em;
     color: #ffc700;
   }
+  img {
+    float: center;
+  }
+  p{
+    font-size: 2em;
+    font-family: pope
+  }
+}
 
