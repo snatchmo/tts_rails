@@ -43,6 +43,8 @@ gem 'font-awesome-rails'
 
 group :development, :test do
 
+  #Gives us great and colorful puts functionality
+  gem 'awesome_print'
   #Quiet assets down added in class 2-11-2015
   gem 'quiet_assets'
 
