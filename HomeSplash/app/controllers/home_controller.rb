@@ -7,13 +7,13 @@ class HomeController < ApplicationController
     #Adjust message by time of day
     @greet_message = case right_now.hour #we are using right now AGAIN
     when 5..11
-      "Good Morning, ya\'ll <i class='fa fa-sun-o'></i> x".html_safe
+      "Good Morning, ya\'ll <span class='fa fa-sun-o'></span> x".html_safe
     when 12..15
-      "Happy Afternoon <i class='fa fa-car'></i> z".html_safe
+      "Happy Afternoon <span class='fa fa-car'></span> z".html_safe
     when 16..19
       "Good Evening X"
     when 20..23, 0..4
-      "Good Night, get some <i class='fa fa-bed'></i> Z".html_safe
+      "Good Night, get some <span class='fa fa-bed'></span> Z".html_safe
     end
   end
 end
