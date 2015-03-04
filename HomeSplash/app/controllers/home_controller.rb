@@ -15,5 +15,7 @@ class HomeController < ApplicationController
     when 20..23, 0..4
       "Good Night, get some <span class='fa fa-bed'></span> Z".html_safe
     end
+
+    @quote = Quote.all.sample.quip
   end
 end

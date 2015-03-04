@@ -23,3 +23,21 @@
   }
 }
 
+#quote {
+  position: absolute;
+  width: 100%;
+  bottom: 5em;
+  text-align: center;
+  font-size: 0.7em;
+
+  &:before {
+    content: open-quote;
+  }
+
+  &:after {
+    content: close-quote;
+  }
+}
+
+
+
