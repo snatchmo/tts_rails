@@ -9,19 +9,20 @@
   <link href="https://fontastic.s3.amazonaws.com/Ujuixj8XtnHiQ84ue5S44X/icons.css" rel="stylesheet">
 </head>
 <body>
-  <% if signed_in? %>
-     Signed in as: <%= current_user.email %>
-     <%= button_to 'Sign out', sign_out_path, method: :delete %>
-   <% else %>
-     <%= link_to 'Sign in', sign_in_path %>
-   <% end %>
-
-   <div id="flash">
-     <% flash.each do |key, value| %>
-       <div class="flash <%= key %>"><%= value %></div>
+  <div id ="clearance_links">
+    <% if signed_in? %>
+       Welcome <%= current_user.email %>
+       <%= link_to (fa_icon "sign-out", text: "Sign Out?"), sign_out_path, method: :delete %>
+     <% else %>
+       <%= link_to (fa_icon "users", text: "Sign In"), sign_in_path %>
      <% end %>
-   </div>
 
+     <div id="flash">
+       <% flash.each do |key, value| %>
+         <div class="flash <%= key %>"><%= value %></div>
+       <% end %>
+     </div>
+  </div>
   <%= yield %>
 
   <%= render 'shared/footer' %>
