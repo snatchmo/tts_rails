@@ -15,6 +15,8 @@
  *= require_self
  */
 
+$minor-sized: .7em;
+
 html {
   font-family: Arial;
   font-size: 20px;
@@ -31,6 +33,34 @@ body {
 }
 a:link {
     text-decoration: none;
+    }
+
+#clearance_links {
+  font-size: $minor-sized;
+  padding: $minor-sized;
+
+   a {
+    display: block;
+    color: white;
+   }
+}
+
+#clearance {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 1em 3em 3em 3em;
+  border-radius: 5px;
+  margin: 0 auto;
+  width: 13em;
+
+    a{
+      color: #eee;
+      text-decoration: none;
+      display: block;
+    }
+
+    div {
+      padding-top: 0.3em;
+    }
 }
 
 #footer {
