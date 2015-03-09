@@ -41,6 +41,9 @@ gem 'thin'
 #Font-Awesome
 gem 'font-awesome-rails'
 
+#User Auth with clearance
+gem 'clearance'
+
 group :development, :test do
 
   #Gives us great and colorful puts functionality
