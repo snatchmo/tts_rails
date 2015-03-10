@@ -7,6 +7,6 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 Quote.create(quip: "Wherever you go, there you are!")
-Quote.create(quip: "Be the change you wish")
+Quote.create(quip: "Be the change you wish", author: "Ghandi")
 Quote.create(quip: "Who Dat")
 Quote.create(quip: "Love is the only force capable of transforming an enemy into friend.")
