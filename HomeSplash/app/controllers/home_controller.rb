@@ -11,7 +11,7 @@ class HomeController < ApplicationController
     when 12..15
       "Happy Afternoon <span class='fa fa-car'></span> z".html_safe
     when 16..19
-      "Good Evening X"
+      "Good Evening X".html_safe
     when 20..23, 0..4
       "Good Night, get some <span class='fa fa-bed'></span> Z".html_safe
     end
