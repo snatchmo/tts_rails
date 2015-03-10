@@ -16,6 +16,7 @@
  */
 
 $minor-sized: .7em;
+$rounded: 5px;
 
 html {
   font-family: Ubuntu, Arial;
@@ -49,6 +50,7 @@ a:link {
   background-color: rgba(0, 0, 0, 0.5);
   padding: 1em 3em 3em 3em;
   border-radius: 5px;
+  text-align: center;
   margin: 0 auto;
   width: 13em;
 
@@ -61,6 +63,24 @@ a:link {
     div {
       padding-top: 0.3em;
     }
+
+    .other-links {
+      font-size: $minor-sized;
+      margin-top: 2em;
+      padding: 10px;
+      border: 1px solid rgba(255, 255, 255, 0.6);
+      border-radius: 5px;
+
+      a {
+        padding: 2px;
+      }
+    }
+}
+
+.flash.notice {
+  background-color: rgba(255,0,0,0.5);
+  padding: 1em;
+  width: 2em
 }
 
 #footer {
