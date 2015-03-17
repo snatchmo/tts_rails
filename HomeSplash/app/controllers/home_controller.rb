@@ -17,5 +17,6 @@ class HomeController < ApplicationController
     end
 
     @quote = Quote.all.sample.quip
+    @author = Quote.all.sample.author
   end
 end
